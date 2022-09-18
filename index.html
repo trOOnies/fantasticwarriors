@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fantastic Warriors">
+    <meta name="keywords" content="fantastic, warriors, marciales, audiovisual, productora, cine">
+    <meta name="description" content="Casa productora de contenido audiovisual para Artes Marciales">
     <script src="https://kit.fontawesome.com/7341f87305.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/logo_1.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <title>Fantastic Warrios</title>
+    <title>Fantastic Warriors</title>
 </head>
 
 <body>
@@ -19,21 +22,28 @@
         <img class="wide-image" src="img/logo_1_cropped.jpg" alt="Header de Fantastic Warriors Productions">
     </header>
     <nav>
-        <div class="nav-buttons-div">
+        <!-- <div class="nav-buttons-div">
             <a class="nav-a" href="index.html"><span class="nav-button">Inicio</span></a>
             <a class="nav-a" href="quienes-somos.html"><span class="nav-button">Quienes somos</span></a>
             <a class="nav-a" href="modalidades.html"><span class="nav-button">Modalidades</span></a>
             <a class="nav-a" href="ubicacion.html"><span class="nav-button">Ubicacion</span></a>
             <a class="nav-a" href="contacto.html"><span class="nav-button">Contacto</span></a>
+        </div> -->
+        <div id="nav-buttons-flex">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes-somos">Quiénes somos</a></li>
+            <li><a href="modalidades.html">Modalidades</a></li>
+            <li><a href="ubicacion.html">Ubicacion</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </div>
     </nav>
     <main>
-        <h1>Bienvenidos a Fantastic Warriors</h1>
+        <h1>Bienvenidos a <span class="fw-name">Fantastic Warriors</span></h1>
         <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/kEHQacTsOLM"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
-        <h1>Quienes somos</h1>
+        <h1>Quiénes somos</h1>
         <div id="quienes-somos">
             <p>
                 Somos una casa productora de contenido audiovisual, formada por profesionales de la industria del cine,
@@ -50,7 +60,8 @@
                 la practica de las mismas.
             </p>
             <p>
-                Contamos con un canal de youtube donde se transmite nuestro contenido original y exclusivo, enfocado al
+                Contamos con un <a href="https://www.youtube.com/channel/UCKZFUWuoVcY7Bc66QXBaV6g">canal de YouTube</a>
+                donde se transmite nuestro contenido original y exclusivo, enfocado al
                 tema que más nos apasiona: Las Artes Marciales.
             </p>
             <p>
@@ -59,7 +70,25 @@
             </p>
         </div>
         <h1>Modalidades</h1>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorum adipisci nostrum, excepturi minus
+            facere
+            consectetur ex cum aperiam tempora, obcaecati alias quisquam ipsa commodi animi aliquam sunt. Odio nobis
+            animi aliquam est asperiores ullam culpa eos nostrum aspernatur eligendi. Hic maiores saepe, id doloribus
+            aspernatur dicta sed voluptatum minima ex praesentium deleniti similique inventore facilis, possimus fugit
+            officia tempore nostrum quos! Repudiandae harum dolores iure quisquam officiis quos, voluptatum rerum
+            suscipit at voluptas cumque magnam officia aliquid facilis distinctio assumenda quibusdam dignissimos est
+            labore obcaecati porro laborum sit commodi placeat? Facilis laboriosam magni quibusdam sunt, ullam adipisci
+            voluptates facere?
+        </p>
+
         <h1>Ubicacion</h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.066850016401!2d-58.3815704!3d-34.6037389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1sen!2sar!4v1663540131166!5m2!1sen!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         <address>
 
             <p></p>
@@ -86,7 +115,7 @@
         <!-- fantasticwproductions@gmail.com -->
     </main>
     <footer>
-        Fantastic Warriors 2022®<br>
+        <span class="fw-name">Fantastic Warriors</span> 2022<br>
         <a href="https://www.facebook.com/fantasticwarriors"><i class="fa fa-facebook" aria-hidden="true"
                 title="Facebook" alt="Facebook"></i></a>
         <a href="https://www.instagram.com/fantasticwarriorsprod/"><i class="fa fa-instagram" aria-hidden="true"
@@ -96,6 +125,7 @@
         <a href="quienes-somos.html"><i class="fa fa-envelope" aria-hidden="true" title="Contactanos"
                 alt="Contactanos"></i></a>
         <br>
+        <address></address>
     </footer>
 </body>
 
