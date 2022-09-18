@@ -95,3 +95,22 @@ footer {
     vertical-align: super;
     font-size: smaller;
 }
+
+#qs-videos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#qs-videos i {
+    margin: 10px 100px;
+}
+
+.img-inicio {
+    width: 30vw;
+}
+
+#contact-fieldset {
+    width: fit-content;
+    border-radius: 5px;
+}
