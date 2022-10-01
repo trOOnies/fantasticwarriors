@@ -1,0 +1,9 @@
+#quienes-somos {
+    font-size: 1.4em;
+}
+
+#qs-videos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

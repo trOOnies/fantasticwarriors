@@ -1,0 +1,10 @@
+.form-button {
+    color: black;
+    font-size: 1em;
+}
+
+#contact-fieldset {
+    font-size: 1.2em;
+    width: fit-content;
+    border-radius: 5px;
+}

@@ -11,11 +11,19 @@ main {
     background-color: rgb(5, 5, 5);
 }
 
-#quienes-somos {
-    font-size: 1.4em;
+.video {
+    padding: 0vw;
 }
 
-.wide-image {
+.fw-name::after {
+    content: "®";
+    vertical-align: super;
+    font-size: smaller;
+}
+
+/* Header */
+
+.header-img {
     display: block;
     width: 23vw;
     padding: 0vw 37.5vw;
@@ -23,28 +31,9 @@ main {
     background-color: rgb(5, 5, 5);
 }
 
-/* Nav buttons spans */
+/* Nav buttons */
 
-.nav-buttons-div {
-    width: 45vw;
-    margin: 10px auto;
-}
-
-.nav-button {
-    display: inline-block;
-    padding: 0.7em 1em;
-    background-color: grey;
-    border-radius: 10px;
-    margin: auto 0.2vw;
-}
-
-.video {
-    padding: 0vw;
-}
-
-/* Nav buttons Flex */
-
-#nav-buttons-flex {
+#nav-buttons {
     display: flex;
     width: 32vw;
     justify-content: space-between;
@@ -52,7 +41,7 @@ main {
     margin: 0vw auto;
 }
 
-#nav-buttons-flex li {
+#nav-buttons li {
     display: inline;
     float: none;
     border-radius: 10px;
@@ -62,20 +51,9 @@ main {
     list-style: none;
 }
 
-#nav-buttons-flex li a:link {
-    font-size: 1.2em;
+#nav-buttons li a:link {
+    font-size: 1.2rem;
     text-decoration: none;
-}
-
-/* Form */
-
-#fieldset-contactanos label {
-    font-size: 1.2em;
-}
-
-.form-button {
-    color: black;
-    font-size: 1em;
 }
 
 /* Footer */
@@ -88,29 +66,4 @@ footer {
     text-align: center;
     font-size: 1.2em;
     background-color: rgb(5, 5, 5);
-}
-
-.fw-name::after {
-    content: "®";
-    vertical-align: super;
-    font-size: smaller;
-}
-
-#qs-videos {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-#qs-videos i {
-    margin: 10px 100px;
-}
-
-.img-inicio {
-    width: 30vw;
-}
-
-#contact-fieldset {
-    width: fit-content;
-    border-radius: 5px;
 }
