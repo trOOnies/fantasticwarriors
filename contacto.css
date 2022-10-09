@@ -1,10 +1,62 @@
-.form-button {
-    color: black;
-    font-size: 1em;
+#contact-fieldset {
+    display: grid;
+    grid-template: auto auto / 70vw;
+    align-items: center;
+    width: fit-content;
+    row-gap: 5px;
+    column-gap: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 20px;
 }
 
-#contact-fieldset {
-    font-size: 1.2em;
-    width: fit-content;
-    border-radius: 5px;
+#contact-fieldset * {
+    font-size: 1.25em;
+}
+
+input {
+    width: 100%;
+    font-size: 2.0em;
+    color: black;
+}
+
+.form-button {
+    width: 100%;
+    color: black;
+    font-size: 1.5em;
+    margin: 5px auto;
+}
+
+/* Pantallas de menos de 600 píxeles 
+(Ancho máximo hasta 600px)*/
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* Pantallas a partir de 600 píxeles 
+(Ancho como mínimo de 600px)*/
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Pantallas de mas de 600 y menos de 768 píxeles */
+/*(Ancho como mínimo de 768px)*/
+@media only screen and (min-width: 768px) {   
+    #contact-fieldset {
+        grid-template: auto auto / 540px;
+    }
+
+    .form-button {
+        width: auto;
+    }
+}
+
+/* Pantallas de mas de 992 y menos de 1200 píxeles */
+/*(Ancho como mínimo de 1200px)*/          
+@media only screen and (min-width: 1200px) {
+    #contact-fieldset {
+        grid-template: auto auto auto auto / 1fr 600px;
+        row-gap: 10px;
+    }
+    #contact-fieldset * {font-size: 1.5em;}
 }

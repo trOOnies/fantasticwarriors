@@ -35,7 +35,7 @@ main {
 
 #nav-buttons {
     display: flex;
-    width: 32vw;
+    width: 24vw;
     justify-content: space-between;
     align-items: center;
     margin: 0vw auto;
