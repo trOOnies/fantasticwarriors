@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="validacion.js"></script>
     <title>Fantastic Warriors</title>
 </head>
 
@@ -32,18 +33,18 @@
     </nav>
     <main>
         <h1>Contacto</h1>
-        <form id="contact-form" action="" alt="Formulario de Contacto">
-            <fieldset id="contact-fieldset" id="fieldset-contactanos">
-                <label class="grid-item" for="input-name">Nombre</label>
-                <input class="grid-item" id="input-name" type="text">
-                <label class="grid-item" for="input-surname">Apellido</label>
-                <input class="grid-item" id="input-surname" type="text">
-                <label class="grid-item" for="input-tel">Teléfono</label>
-                <input class="grid-item" id="input-tel" type="tel">
-                <label class="grid-item" for="input-email">Email</label>
-                <input class="grid-item" id="input-email" type="email">
+        <form id="contactForm" alt="Formulario de Contacto">
+            <fieldset id="contactFieldset" id="fieldset-contactanos">
+                <label class="grid-item" for="inputName">Nombre</label>
+                <input class="grid-item" id="inputName" type="text">
+                <label class="grid-item" for="inputSurname">Apellido</label>
+                <input class="grid-item" id="inputSurname" type="text">
+                <label class="grid-item" for="inputTel">Teléfono</label>
+                <input class="grid-item" id="inputTel" type="tel">
+                <label class="grid-item" for="inputEmail">Email</label>
+                <input class="grid-item" id="inputEmail" type="email">
             </fieldset>
-            <input class="form-button" type="submit" value="Enviar">
+            <input class="form-button" type="button" value="Enviar" onclick="validarContacto()">
             <input class="form-button" type="reset" value="Borrar">
         </form>
         <!-- fantasticwproductions@gmail.com -->

@@ -1,4 +1,4 @@
-#contact-fieldset {
+#contactFieldset {
     display: grid;
     grid-template: auto auto / 70vw;
     align-items: center;
@@ -10,7 +10,7 @@
     padding: 20px;
 }
 
-#contact-fieldset * {
+#contactFieldset * {
     font-size: 1.25em;
 }
 
@@ -42,7 +42,7 @@ input {
 /* Pantallas de mas de 600 y menos de 768 píxeles */
 /*(Ancho como mínimo de 768px)*/
 @media only screen and (min-width: 768px) {   
-    #contact-fieldset {
+    #contactFieldset {
         grid-template: auto auto / 540px;
     }
 
@@ -54,9 +54,9 @@ input {
 /* Pantallas de mas de 992 y menos de 1200 píxeles */
 /*(Ancho como mínimo de 1200px)*/          
 @media only screen and (min-width: 1200px) {
-    #contact-fieldset {
+    #contactFieldset {
         grid-template: auto auto auto auto / 1fr 600px;
         row-gap: 10px;
     }
-    #contact-fieldset * {font-size: 1.5em;}
+    #contactFieldset * {font-size: 1.5em;}
 }
