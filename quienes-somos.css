@@ -1,9 +1,15 @@
 #quienes-somos {
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 #qs-videos {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+
+/* Pantallas de más de 800 píxeles */
+@media only screen and (min-width: 800px) {
+    #quienes-somos {font-size: 1.4em}
 }
