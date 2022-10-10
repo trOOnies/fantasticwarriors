@@ -18,12 +18,43 @@ function validarContacto() {
         }
     }
 
+    // Nombre y Apellido
     const ALL_DIGITS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-    var telChars = form.inputTel.value.split("")
+    nameCamps = ["inputName", "inputSurname"]
+
+    for (camp of nameCamps) {
+        var campChars = form[camp].value.split("")
+        if (campChars.some(x => ALL_DIGITS.includes(x))) {
+            commonName = aNombreComun(camp)
+            alert(`El campo '${commonName}' no puede incluir dígitos. Usar números romanos de ser necesario.`)
+            form[camp].focus()
+            return;
+        }
+    }
+
+    // Telefono
+    var telValue = form.inputTel.value
+    if (telValue.length < 6 || telValue.length > 20) {
+        commonName = aNombreComun("inputTel")
+        alert(`El campo '${commonName}' debe tener entre 6 y 20 caracteres.`)
+        form.inputTel.focus()
+        return;
+    }
+    var telChars = telValue.split("")
     if (!telChars.every(x => ALL_DIGITS.includes(x))) {
         commonName = aNombreComun("inputTel")
         alert(`El campo '${commonName}' debe incluir sólo dígitos. No incluir espacios, ni guiones u otros caracteres especiales.`)
-        form.inputTel.focus()  // Foco sobre el campo a completar
+        form.inputTel.focus()
+        return;
+    }
+
+    // Email
+    var atSymbolPos = form.inputEmail.value.indexOf("@")
+    var dotLastPos = form.inputEmail.value.lastIndexOf(".")
+    if (atSymbolPos === -1 || dotLastPos === -1 || dotLastPos < atSymbolPos) {
+        commonName = aNombreComun("inputEmail")
+        alert(`El valor de '${commonName}' inputado es invalido.`)
+        form.inputEmail.focus()
         return;
     }
 
