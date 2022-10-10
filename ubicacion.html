@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/7341f87305.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/logo_1.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ubicacion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -32,16 +33,25 @@
     <main>
         <h1>Ubicación</h1>
 
-        <address>
-            Dirección: ... <br>
-            Entre calles: ... <br>
-            Horario de atención: ... <br>
-        </address>
+        <div id="ubicacion">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.004476244247!2d-58.382375515865334!3d-34.60410491392294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbde433ed74b%3A0x5935d924f54bc257!2sGimnasio%20Smart%20Fit%20-%20Microcentro!5e0!3m2!1sen!2sar!4v1665435205578!5m2!1sen!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="grid-item"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
 
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.066850016401!2d-58.3815704!3d-34.6037389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1sen!2sar!4v1663540131166!5m2!1sen!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <address class="grid-item">
+                Dirección: Tte. Gral. Juan Domingo Perón 547 (<abbr
+                    title="Ciudad Autónoma de Buenos Aires">CABA</abbr>)<br>
+                Entre calles: Florida y San Martín<br>
+                Horario de atención:<br>
+                <ul>
+                    <li>Lunes a Viernes: 10 a 19 hrs</li>
+                    <li>Sábados: 10 a 15 hrs</li>
+                    <li>Domingo: Cerrado</li>
+                </ul>
+            </address>
+        </div>
     </main>
     <footer>
         <span class="fw-name">Fantastic Warriors</span> 2022<br>

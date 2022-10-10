@@ -27,20 +27,7 @@ input {
     margin: 5px auto;
 }
 
-/* Pantallas de menos de 600 píxeles 
-(Ancho máximo hasta 600px)*/
-@media only screen and (max-width: 600px) {
-    
-}
-
-/* Pantallas a partir de 600 píxeles 
-(Ancho como mínimo de 600px)*/
-@media only screen and (min-width: 600px) {
-    
-}
-
-/* Pantallas de mas de 600 y menos de 768 píxeles */
-/*(Ancho como mínimo de 768px)*/
+/* Pantallas de más de 768 píxeles */
 @media only screen and (min-width: 768px) {   
     #contactFieldset {
         grid-template: auto auto / 540px;
@@ -51,8 +38,7 @@ input {
     }
 }
 
-/* Pantallas de mas de 992 y menos de 1200 píxeles */
-/*(Ancho como mínimo de 1200px)*/          
+/* Pantallas de más de 1200 píxeles */  
 @media only screen and (min-width: 1200px) {
     #contactFieldset {
         grid-template: auto auto auto auto / 1fr 600px;
