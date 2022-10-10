@@ -25,9 +25,9 @@ main {
 
 .header-img {
     display: block;
-    width: 23vw;
-    padding: 0vw 37.5vw;
+    width: 25%;
     margin: 10px auto;
+    min-width: 200px;
     background-color: rgb(5, 5, 5);
 }
 
@@ -35,35 +35,66 @@ main {
 
 #nav-buttons {
     display: flex;
-    width: 24vw;
+    flex-direction: column;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin: 0vw auto;
+    margin: 0vw;
 }
 
 #nav-buttons li {
     display: inline;
     float: none;
-    border-radius: 10px;
     background-color: grey;
-    /* width: 400px; */
-    padding: 10px;
+    width: 100%;
+    padding: 8px;
     list-style: none;
+    white-space: nowrap;
+    border-top: 1px solid rgb(212, 210, 210);
+    border-bottom: 1px solid rgb(212, 210, 210);
 }
 
 #nav-buttons li a:link {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     text-decoration: none;
+    text-align: center;
+}
+
+
+/* Pantallas de más de 720 píxeles */
+@media only screen and (min-width: 720px) {
+    #nav-buttons {
+        width: 450px;
+        flex-direction: row;
+        padding: 10px;
+        margin: 0vw auto;
+    }
+    #nav-buttons li {
+        width: auto;
+        border-width: 0px;
+        border-radius: 10px;
+    }
+    #nav-buttons li a:link {
+        font-size: 1.2rem;
+    }
 }
 
 /* Footer */
 
 .fa {
     color: white;
+    font-size: 1.5em;
 }
 
 footer {
     text-align: center;
     font-size: 1.2em;
     background-color: rgb(5, 5, 5);
+}
+
+/* Pantallas de más de 720 píxeles */
+@media only screen and (min-width: 720px) {
+    .fa {
+        font-size: 1.2em;
+    }
 }
