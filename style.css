@@ -92,6 +92,26 @@ footer {
     background-color: rgb(5, 5, 5);
 }
 
+
+.fa:hover {
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+.fa-facebook:hover {
+    color: #4267B2;
+}
+.fa-instagram:hover {
+    color: #C13584;
+}
+.fa-youtube:hover {
+    color: #FF0000;
+}
+.fa-envelope:hover {
+    color: darkturquoise;
+}
+
 /* Pantallas de más de 768 píxeles */
 @media only screen and (min-width: 768px) {
     .fa {
