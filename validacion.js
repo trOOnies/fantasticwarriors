@@ -58,5 +58,5 @@ function validarContacto() {
         return;
     }
 
-    alert("Formulario validado con exito!")
+    alert("Envio de datos realizado con exito! Pronto nos pondremos en contacto con usted.")
 }
