@@ -61,8 +61,8 @@ main {
 }
 
 
-/* Pantallas de más de 720 píxeles */
-@media only screen and (min-width: 720px) {
+/* Pantallas de más de 768 píxeles */
+@media only screen and (min-width: 768px) {
     #nav-buttons {
         width: 450px;
         flex-direction: row;
@@ -92,8 +92,8 @@ footer {
     background-color: rgb(5, 5, 5);
 }
 
-/* Pantallas de más de 720 píxeles */
-@media only screen and (min-width: 720px) {
+/* Pantallas de más de 768 píxeles */
+@media only screen and (min-width: 768px) {
     .fa {
         font-size: 1.2em;
     }
