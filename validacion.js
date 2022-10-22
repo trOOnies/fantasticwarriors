@@ -1,9 +1,16 @@
+function isEmailDisposable (email) {
+    return fetch(`https://open.kickbox.com/v1/disposable/${email}`)
+        .then(response => response.json())
+        .catch(error => console.log('error', error))
+}
+
+
 function aNombreComun(camp) {
     return document.querySelector(`label[for=${camp}]`).textContent
 }
 
 
-function validarContacto() {
+async function validarContacto() {
     var form = document.getElementById("contactForm")
 
     allCamps = ["inputName", "inputSurname", "inputTel", "inputEmail"]
@@ -59,4 +66,15 @@ function validarContacto() {
     }
 
     alert("Envio de datos realizado con exito! Pronto nos pondremos en contacto con usted.")
+
+    // Muestro la informacion inputada
+    var valOut = document.querySelector("#validacionOut p")
+    valOut.innerHTML = "Información enviada"
+    for (camp of allCamps) {
+        valOut.innerHTML += `<br>${aNombreComun(camp)}: ${form[camp].value}`
+    }
+
+    var ans = await isEmailDisposable(form.inputEmail.value)
+    valOut.innerHTML += ` (desechable=${ans.disposable})`
+    
 }
