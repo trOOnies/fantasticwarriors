@@ -65,6 +65,8 @@ async function validarContacto() {
         return;
     }
 
+    // Exito!
+    var prom = isEmailDisposable(form.inputEmail.value)
     alert("Envio de datos realizado con exito! Pronto nos pondremos en contacto con usted.")
 
     // Muestro la informacion inputada
@@ -74,7 +76,7 @@ async function validarContacto() {
         valOut.innerHTML += `<br>${aNombreComun(camp)}: ${form[camp].value}`
     }
 
-    var ans = await isEmailDisposable(form.inputEmail.value)
+    var ans = await prom
     valOut.innerHTML += ` (desechable=${ans.disposable})`
     
 }
